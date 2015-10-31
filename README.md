@@ -3,9 +3,10 @@
 ## Purpose
 Brings a newly installed Ubuntu 14.04 workstation to a desired state.
 
-## How it works
-Run `./bootstrap.sh' on a fresh Ubuntu 14.04 installation to configure the
-necessary prerequisites for Chef to then configure the desired state of the
-workstation.
-
+## Installation
+`sudo apt-get update`
+`sudo apt-get install -y git`
+`git clone https://github.com/chris-pray/bootstrap_workstation.git ~/Downloads/bootstrap_workstation`
+`cd ~/Downloads/bootstrap_workstation`
+`./bootstrap.sh`
 

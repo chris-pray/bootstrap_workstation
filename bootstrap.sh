@@ -7,18 +7,6 @@
 # All rights reserved
 ################
 
-sudo apt-get update
-if [ $? -ne 0 ]; then
-	echo "failed to update apt"
-	exit 1
-fi
-
-sudo apt-get install -y git
-if [ $? -ne 0 ]; then
-	echo "failed to install git"
-	exit 1
-fi
-
 if [ -f ~/Downloads/chefdk_0.9.0-1_amd64.deb ]; then
 	echo "chefdk found"
 else
